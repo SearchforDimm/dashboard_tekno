@@ -1,0 +1,37 @@
+@import url("boxicons/css/boxicons.min.css");
+@import url("../src/styles/sidebar.css");
+@import url("../src/styles/login.css");
+@import url("../src/styles/main.css");
+@import url("../src/styles/navbar.css");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9ecef;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.nav_image {
+  display: flex;
+  min-width: 55px;
+  justify-content: center;
+}
+.nav_image img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.centered-p {
+  color: #eb2020;
+  font-weight: 400;
+  font-size: 12px;
+}

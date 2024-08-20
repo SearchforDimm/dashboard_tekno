@@ -1,0 +1,139 @@
+.login-container {
+  width: 100%;
+  display: flex;
+}
+
+.left-main,
+.right-main {
+  width: 50%;
+  position: relative;
+}
+.left-main .absolute-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+}
+
+.left-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+}
+.login-section .title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.login-section .title-login {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.login-section .title-login h1 {
+  font-weight: 600;
+  font-size: 26px;
+}
+.login-section .title-login p {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text);
+}
+.login-section .title {
+  margin-bottom: 20px;
+}
+.login-section .title h1 {
+  font-weight: 500;
+  font-size: 22px;
+}
+.login-section .title img {
+  width: 25px;
+}
+
+.login-form {
+  width: 100%;
+}
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.login-form form input {
+  border: 0.1em solid #3a57e8;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+
+.login-form form .form-mb {
+  margin-bottom: 20px;
+}
+.login-form form .form-text {
+  color: var(--text);
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.remember-forgot label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.remember-forgot label p {
+  text-wrap: nowrap;
+  color: var(--text);
+}
+
+.remember-forgot a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #2962ff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 50%;
+  align-self: center;
+}
+
+button:hover {
+  background-color: #0039cb;
+}
+
+.right-main {
+  height: 100vh;
+  background: url(../../public/images/bg-login.png);
+  background-position: center;
+  background-size: cover;
+}

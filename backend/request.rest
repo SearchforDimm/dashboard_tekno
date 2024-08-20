@@ -1,0 +1,35 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEyLCJuYW1lIjoiQm9uZGkgR2FtaW5nIEF3bGEgS2FrYSBBbmllcyIsImVtYWlsIjoiYm9uZGlnYW1pbmdAZ21haWwuY29tIiwiZGVzY3JpcHRpb24iOiJJbnRlcm4gVGVrbm9tYWR5YSIsImlhdCI6MTcyNDE2NzMzMiwiZXhwIjoxNzI0MTY3MzUyfQ.Q0hf6EaVoxXV-9O5sX6xpGeZmsfNSBmC5D1Zcocmfvs
+
+
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Anies Gaming Mantap",
+    "email": "anis@gmail.com",
+    "description": "VP Teknomadya",
+    "password": "123",
+    "confPassword": "123"
+}
+
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "anis@gmail.com",
+    "password": "123"
+}
+
+###
+
+GET http://localhost:5000/token
+
+###
+
+DELETE http://localhost:5000/logout

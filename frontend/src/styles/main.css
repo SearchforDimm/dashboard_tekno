@@ -1,0 +1,50 @@
+.main {
+  position: absolute;
+  transition: all ease 0.3s;
+  z-index: -9999;
+  top: 9.5%;
+  left: 17.5%;
+  padding: 40px;
+  background: url(../../public/images/bg-login.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 82.5%;
+  height: 250px;
+  border-radius: 0 0px 16px 16px;
+}
+
+.main.active-main {
+  left: 5%;
+  width: 95%;
+}
+
+.welcome-container {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.welcome-tab {
+  position: absolute;
+  bottom: -10px;
+  width: 93%;
+  background-color: #fff;
+  color: #333;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 10px 20px;
+}
+.welcome-tab .button {
+  background-color: #3a57e8;
+  border-radius: 4px;
+}
+.welcome-tab .button a {
+  text-decoration: none;
+  padding: 9px 18px;
+  display: block;
+  color: #fff;
+}
