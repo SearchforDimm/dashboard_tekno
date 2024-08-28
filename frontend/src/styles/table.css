@@ -1,0 +1,219 @@
+.table-container {
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  transition: all ease 0.3s;
+  left: 20.1%;
+  top: 47.9%;
+  width: 76.7%;
+  z-index: -9999;
+}
+
+.table-container.active-table {
+  left: 7.8%;
+  width: 88%;
+}
+
+.table-heading {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+}
+
+.table-entries {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.table-add button {
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  background-color: #3a57e8;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.table-add button:hover {
+  background-color: #2e4bd0;
+}
+.table-entries p {
+  font-weight: 600;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  margin: 20px 0;
+}
+
+thead th {
+  color: #333;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+.table-notdetail tbody tr:nth-child(odd) {
+  background-color: #f7f6fe;
+}
+tbody td {
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-notdetail tbody tr {
+  display: table-row;
+}
+
+tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.td-flex {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.td-btn {
+  outline: none;
+  border: none;
+  background-color: #ebebeb;
+  padding: 12px 5px;
+  border-radius: 4px;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-wrap: nowrap;
+}
+
+.td-btn:hover {
+  background-color: #d6d6d6;
+}
+
+.td-flex i.bx {
+  cursor: pointer;
+  font-size: 26px;
+}
+
+i.bx-edit {
+  color: #3a57e8;
+}
+
+i.bx-trash {
+  color: #e83a3a;
+}
+
+i.bx-edit:hover {
+  color: #0056b3;
+}
+
+i.bx-trash:hover {
+  color: #eb2020;
+}
+
+td:last-child {
+  text-align: center;
+}
+
+select {
+  width: 60px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.select-wrapper::after {
+  content: "\25BC";
+  font-size: 12px;
+  color: #333;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.modal-details {
+  border-radius: 4px;
+  background-color: #fff;
+  width: 80%;
+  border: 0.5px solid #ccc;
+  left: 55%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+.modal-overlay {
+  background: #0000004e;
+  width: 100%;
+  height: 100svh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  transition: all 0.3s ease;
+}
+.table-details {
+  margin-top: 20px;
+}
+
+.modal-details table {
+  margin-top: 20px;
+}
+
+.modal-details table tbody tr:nth-child(odd) {
+  background-color: #e9ecef;
+}
+
+.modal-details .modal-header {
+  display: flex;
+  border-bottom: 0.5px solid #e9ecef;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.modal-details i {
+  font-size: 42px;
+  color: #e83a3a;
+  cursor: pointer;
+}

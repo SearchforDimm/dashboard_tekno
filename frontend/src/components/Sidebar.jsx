@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink, Link } from "react-router-dom";
 const Sidebar = () => {
   const navigate = useNavigate();
   const Logout = async () => {
@@ -33,10 +33,12 @@ const Sidebar = () => {
               <span className="line"></span>
             </div>
             <li className="item">
-              <a href="#" className="link flex">
-                <i className="bx bx-home-alt"></i>
-                <span>Home Page</span>
-              </a>
+              <NavLink to="/dashboard">
+                <div href="#" className="link flex">
+                  <i className="bx bx-home-alt"></i>
+                  <span>Home Page</span>
+                </div>
+              </NavLink>
             </li>
           </ul>
           <ul className="menu_item">
@@ -45,22 +47,28 @@ const Sidebar = () => {
               <span className="line"></span>
             </div>
             <li className="item">
-              <a href="calendar.html" className="link flex">
-                <i className="bx bx-calendar"></i>
-                <span>Calendar</span>
-              </a>
+              <NavLink to="/calendar">
+                <div href="calendar.html" className="link flex">
+                  <i className="bx bx-calendar"></i>
+                  <span>Calendar</span>
+                </div>
+              </NavLink>
             </li>
             <li className="item">
-              <a href="worklog.html" className="link flex">
-                <i className="bx bx-briefcase"></i>
-                <span>Work Log</span>
-              </a>
+              <NavLink to="/worklog">
+                <div href="worklog.html" className="link flex">
+                  <i className="bx bx-briefcase"></i>
+                  <span>Work Log</span>
+                </div>
+              </NavLink>
             </li>
             <li className="item">
-              <a href="workorder.html" className="link flex">
-                <i className="bx bx-table"></i>
-                <span>Work Order</span>
-              </a>
+              <NavLink to="/workorder">
+                <div className="link flex">
+                  <i className="bx bx-table"></i>
+                  <span>Work Order</span>
+                </div>
+              </NavLink>
             </li>
           </ul>
           <ul className="menu_item logout">

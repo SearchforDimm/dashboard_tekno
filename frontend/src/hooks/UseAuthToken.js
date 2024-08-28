@@ -7,7 +7,6 @@ const UseAuthToken = () => {
   const [name, setName] = useState("");
   const [token, setToken] = useState("");
   const [description, setDescription] = useState("");
-  const [expire, setExpire] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -20,11 +19,8 @@ const UseAuthToken = () => {
           setToken(response.data.accessToken);
           const decoded = jwtDecode(response.data.accessToken);
 
-          // Debugging: Ensure the decoded token contains the description field
-          console.log("Decoded token:", decoded);
 
           setName(decoded.name);
-          setExpire(decoded.exp);
           setDescription(decoded.description);
       } catch (error) {
           if (error.response) {

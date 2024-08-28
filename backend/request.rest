@@ -1,5 +1,5 @@
 GET http://localhost:5000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEyLCJuYW1lIjoiQm9uZGkgR2FtaW5nIEF3bGEgS2FrYSBBbmllcyIsImVtYWlsIjoiYm9uZGlnYW1pbmdAZ21haWwuY29tIiwiZGVzY3JpcHRpb24iOiJJbnRlcm4gVGVrbm9tYWR5YSIsImlhdCI6MTcyNDE2NzMzMiwiZXhwIjoxNzI0MTY3MzUyfQ.Q0hf6EaVoxXV-9O5sX6xpGeZmsfNSBmC5D1Zcocmfvs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEzLCJuYW1lIjoiQW5pZXMgQUkgZW50cmVwZW5ldXIiLCJlbWFpbCI6ImFuaXNAZ21haWwuY29tIiwiZGVzY3JpcHRpb24iOiJWUCBUZWtub21hZHlhIiwiaWF0IjoxNzI0MjA3ODM2LCJleHAiOjE3MjQyMDc4NTZ9.CmqEe3NWz3YP0GS75-Jf1-mgqDVnThzcZzMdMMAMwAs
 
 
 ###
@@ -8,9 +8,9 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-    "name": "Anies Gaming Mantap",
-    "email": "anis@gmail.com",
-    "description": "VP Teknomadya",
+    "name": "Adam Schewneger",
+    "email": "adam@gmail.com",
+    "description": "Intern Teknomadya",
     "password": "123",
     "confPassword": "123"
 }

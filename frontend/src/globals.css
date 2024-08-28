@@ -3,12 +3,14 @@
 @import url("../src/styles/login.css");
 @import url("../src/styles/main.css");
 @import url("../src/styles/navbar.css");
+@import url("../src/styles/table.css");
 
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -34,4 +36,33 @@ body {
   color: #eb2020;
   font-weight: 400;
   font-size: 12px;
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar {
+    left: 65%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sidebar {
+    left: 0;
+    z-index: 1000;
+  }
+  .sidebar.close {
+    left: -100%;
+  }
+  #sidebar-close {
+    display: block;
+  }
+  #lock-icon {
+    display: none;
+  }
+  .navbar {
+    left: 0;
+    max-width: 100%;
+    transform: translateX(0%);
+  }
+  #sidebar-open {
+    display: block;
+  }
 }

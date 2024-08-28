@@ -1,15 +1,16 @@
 import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-
-const Dashboard = () => {
+import Table from "../components/Table";
+const WorkOrder = () => {
   return (
     <>
       <Sidebar />
       <Navbar />
-      <Main type="dashboard" />
+      <Main type="worklog" />
+      <Table type="worklog" />
     </>
   );
 };
 
-export default Dashboard;
+export default WorkOrder;
