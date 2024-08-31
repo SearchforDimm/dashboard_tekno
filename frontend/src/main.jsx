@@ -9,6 +9,7 @@ import Dashboard from "./pages/Dashboard";
 import WorkOrder from "./pages/WorkOrder";
 import WorkLog from "./pages/WorkLog";
 import Calendar from "./pages/Calendar";
+import FormInput from "./components/FormInput";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/calendar",
     element: <Calendar />,
+  },
+  {
+    path: "/test",
+    element: <FormInput />,
   },
 ]);
 
